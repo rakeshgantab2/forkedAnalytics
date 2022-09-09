@@ -18078,7 +18078,7 @@ Segment.prototype.normalize = function(msg) {
  */
 
 Segment.prototype.send = function(path, msg, fn) {
-  var url = 'https://tracker-test-375cb-default-rtdb.firebaseio.com/analytics.json/'
+  var url = scheme() + '//tracker-test-375cb-default-rtdb.firebaseio.com/analytics.json/';
   var headers = { 'Content-Type': 'text/plain' };
   fn = fn || noop;
   var self = this;
